@@ -36,7 +36,6 @@ class PersonTests: XCTestCase {
   }
   
 }
-
 class FamilyTests : XCTestCase {
   
   func testFamily() {
@@ -67,7 +66,9 @@ class FamilyTests : XCTestCase {
     let _ = family.haveChild(matt)
     
     let familyIncome = family.householdIncome()
+    print("fam " + String(familyIncome))
     XCTAssert(familyIncome == 12000)
   }
   
 }
+
