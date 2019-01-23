@@ -67,7 +67,6 @@ public struct Money {
     private func getCurValue(cur: Money) -> Int{
         switch cur.currency{
         case "GBP":
-            print("usdvalue " + String(cur.amount))
             return Int(Double(cur.amount) / 2)
         case "EUR":
             return Int(Double(cur.amount) * 1.5)
